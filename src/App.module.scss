@@ -1,0 +1,31 @@
+.appContainer {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 14px; /* Largeur de la barre de défilement */
+  background-color: var(--scrollBarBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(
+    --scrollToTop
+  ); /* Couleur du pouce de la barre de défilement */
+  border-radius: 6px; /* Arrondi des coins du pouce */
+}
+
+/* Pour les autres navigateurs */
+scrollbar {
+  width: 14px; /* Largeur de la barre de défilement */
+}
+
+scrollbar-thumb {
+  background-color: var(
+    --scrollToTop
+  ); /* Couleur du pouce de la barre de défilement */
+  border-radius: 6px; /* Arrondi des coins du pouce */
+}
+
+html {
+  scroll-behavior: smooth;
+}

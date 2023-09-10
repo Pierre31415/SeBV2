@@ -1,0 +1,45 @@
+.btn-scrollTop {
+  position: fixed;
+  bottom: 40px;
+  font-size: 2.7rem;
+  z-index: 2;
+  cursor: pointer;
+  color: blue;
+  // right: 380px;
+  right: 50px; // @media screen and (max-width: 1800px) {
+  //   right: 360px;
+  // }
+  @media screen and (max-width: 1400px) {
+    right: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    right: 10px;
+  }
+  background: none;
+  border-radius: 50px;
+  border: none;
+  opacity: 1;
+  margin-bottom: -10px;
+  margin-right: 10px;
+
+  &:hover {
+    filter: brightness(1.4);
+    transition: all ease-in-out 0.15s;
+  }
+}
+
+.scrollTopBack {
+  background-color: var(--scrollToTop);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 200, "opsz" 42;
+  border-radius: 50px;
+}
